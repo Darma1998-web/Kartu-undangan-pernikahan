@@ -10,7 +10,7 @@
   <div class="container">
     <header>
       <h1>Undangan Pernikahan</h1>
-      <p>Nama Mempelai</p>
+      <p>DARMAWAN DAN SYIFA</p>
     </header>
     <section class="event-details">
       <h2>Detail Acara</h2>

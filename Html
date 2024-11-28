@@ -46,3 +46,97 @@
   <script src="script.js"></script> <!-- Hubungkan ke JavaScript -->
 </body>
 </html>
+/* Gaya dasar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigasi */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Bagian Utama */
+main {
+  padding: 20px;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+/* Formulir Kontak */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+}
+// Tangani pengiriman formulir
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  alert(`Terima kasih, ${name}! Kami akan menghubungi Anda di ${email}.`);
+  document.getElementById('contactForm').reset();
+});
